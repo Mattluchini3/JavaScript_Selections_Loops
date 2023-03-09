@@ -57,6 +57,10 @@ while (i <= 100) {
         output += "BUZZ";
     }
 
+    if( i % 3 == 0 && i % 5 == 0 ) {
+        output += "FIZZBUZZ"
+    }
+
     console.log({i},{output});
 
     i++;
@@ -73,6 +77,9 @@ do {
 
     if(x % 5 == 0) {
         output += "BUZZ";
+    }
+    if (x % 3 ==0 && x % 5 ==0 ){
+        output += "FizzBuzz";
     }
 
     console.log({x}, {output});
@@ -105,7 +112,7 @@ let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
 let start = Math.round(Math.random() * (10 - 1) + 1); 
 let end = Math.round(Math.random() * (1000 - 100) + 100); 
 
-for (let i = start; 1 <= end; i++) {
+for (let i = start; i <= end; i++) {
     let output = "";
 
     if (i % fizzDivisor == 0) {
