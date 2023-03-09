@@ -1,7 +1,4 @@
 // Exercise 1 
-for (let i = 1; i <= 99; i += 2) {
-    console.log(i);
-}
 
 for (let i = 0; i < 100; i++) {
     if (1 % 2 == 0) {
@@ -10,37 +7,31 @@ for (let i = 0; i < 100; i++) {
         console.log(i); 
     }
 }
+//exercise 3 for exercise 1
+let b = 1;
 
-for (let i = 1; i < 100; 1++) {
-    if (i % 2 !== 0) {
-        console.log(i);
-    }
-}
-//exercise 3
-let i = 1;
-
-while(i < 100) {
-    if(i % 2 !== 0) {
-        console.log(i);
+while(b < 100) {
+    if(b % 2 !== 0) {
+        console.log(b);
     }
 
-    i++;
+    b++;
 }
 
-let x = 1;
+let t = 1;
 
 do {
-    if (x % 2 !== 0) {
-        console.log(x);
+    if (t % 2 !== 0) {
+        console.log(t);
     }
 
-    x++;
-} while (x < 100);
+    t++;
+} while (t < 100);
 
 //Exercise 2 FIZZBUZZ
 
 for (let i = 1; i < 100; i++) {
-    if (1 % 3 == 0 && i % 5 == 0) {
+    if (i % 3 == 0 && i % 5 == 0) {
         console.log("FIZZBUZZ");
     } else {
         if (i % 3 == 0) {
@@ -66,7 +57,7 @@ while (i <= 100) {
         output += "BUZZ";
     }
 
-    console.log('${i} ${output}');
+    console.log({i},{output});
 
     i++;
 }
@@ -84,7 +75,7 @@ do {
         output += "BUZZ";
     }
 
-    console.log('${x} ${output}');
+    console.log({x}, {output});
 
     x++;
 }
@@ -99,12 +90,12 @@ let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random numbe
 
 for (let i = 1; i <= n; i++) {
     if (i == numberToFind) {
-        console.log('Found ${numberToFind}!');
+        console.log('Found' ,{numberToFind},'!');
         break;
     }
 
     if (i == n) {
-        console.log('Did not find ${numberToFind} within 1-${n}..');
+        console.log('Did not find',{numberToFind}, 'within 1-',{n});
     }
 }
 //exercise 5
@@ -125,7 +116,7 @@ for (let i = start; 1 <= end; i++) {
         output += "BUZZ";
     }
 
-    console.log('${i} ${output}');
+    console.log({i} , {output});
 }
 
 console.log(fizzDivisor, buzzDivisor)
